@@ -1,13 +1,6 @@
 'use strict';
 
-
-
-/**
- * PRELOAD
- * 
- * loading will be end after document is loaded
- */
-
+/* PRELOAD */
 const preloader = document.querySelector("[data-preaload]");
 
 window.addEventListener("load", function () {
@@ -15,12 +8,7 @@ window.addEventListener("load", function () {
   document.body.classList.add("loaded");
 });
 
-
-
-/**
- * add event listener on multiple elements
- */
-
+// add event listener on multiple elements
 const addEventOnElements = function (elements, eventType, callback) {
   for (let i = 0, len = elements.length; i < len; i++) {
     elements[i].addEventListener(eventType, callback);
@@ -28,11 +16,7 @@ const addEventOnElements = function (elements, eventType, callback) {
 }
 
 
-
-/**
- * NAVBAR
- */
-
+/* NAVBAR */
 const navbar = document.querySelector("[data-navbar]");
 const navTogglers = document.querySelectorAll("[data-nav-toggler]");
 const overlay = document.querySelector("[data-overlay]");
@@ -45,12 +29,26 @@ const toggleNavbar = function () {
 
 addEventOnElements(navTogglers, "click", toggleNavbar);
 
+// dejar elemento seleccionado del nav
+function setActive(element) {
+  var navbarLinks = document.querySelectorAll(".navbar-link");
+
+  navbarLinks.forEach(function(link) {
+      link.classList.remove("active");
+  });
+  element.classList.add("active");
+}
+
+var navbarItems = document.querySelectorAll(".navbar-item");
+
+navbarItems.forEach(function(item) {
+  item.addEventListener("click", function() {
+      setActive(this.querySelector("a"));
+  });
+});
 
 
-/**
- * HEADER & BACK TOP BTN
- */
-
+/* HEADER & BACK TOP BTN */
 const header = document.querySelector("[data-header]");
 const backTopBtn = document.querySelector("[data-back-top-btn]");
 
@@ -79,11 +77,7 @@ window.addEventListener("scroll", function () {
 });
 
 
-
-/**
- * HERO SLIDER
- */
-
+/* HERO SLIDER */
 const heroSlider = document.querySelector("[data-hero-slider]");
 const heroSliderItems = document.querySelectorAll("[data-hero-slider-item]");
 const heroSliderPrevBtn = document.querySelector("[data-prev-btn]");
@@ -122,10 +116,7 @@ const slidePrev = function () {
 
 heroSliderPrevBtn.addEventListener("click", slidePrev);
 
-/**
- * auto slide
- */
-
+// auto slide
 let autoSlideInterval;
 
 const autoSlide = function () {
@@ -143,11 +134,7 @@ addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseout", autoSlide
 window.addEventListener("load", autoSlide);
 
 
-
-/**
- * PARALLAX EFFECT
- */
-
+/* PARALLAX EFFECT */
 const parallaxItems = document.querySelectorAll("[data-parallax-item]");
 
 let x, y;
