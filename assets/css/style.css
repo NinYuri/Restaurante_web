@@ -867,7 +867,11 @@
   /*-----------------------------------*\
     #ABOUT
   \*-----------------------------------*/
-  .about .section-text { margin-block: 15px 30px; }
+  .about .section-text { 
+    margin-block: 15px 30px; 
+    padding-inline: 10px;
+    text-align: justify;
+  }
   
   .about .btn {
     margin-inline: auto;
