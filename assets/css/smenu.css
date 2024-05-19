@@ -781,7 +781,7 @@
     0% { transform: scale(1); }
     100% { transform: scale(1.15); }
   }
-
+  
   .hero-text { margin-block: 40px 10px; }
 
   
@@ -1167,8 +1167,6 @@
     }
 
     /* HEADER */
-    .navbar-list { margin-inline: 30px; }
-
     .logo .container-logo .logo-text p {
         letter-spacing: 5px;
     }
