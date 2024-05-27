@@ -824,6 +824,10 @@
     font-weight: var(--weight-bold);
     margin-block-end: 15px;
   }
+
+  .column .contact-link { transition: var(--transition-1); }
+  
+  .column .contact-link:is(:hover, :focus-visible) { color: var(--gold-crayola); }
   
 
   /*-----------------------------------*\
@@ -1075,9 +1079,6 @@
     }
 
     .q-input:last-child { margin-block-end: 20px; }
-
-    /* SOCIALS */
-    .social-network img{ width: 30px; }
   }
 
 
