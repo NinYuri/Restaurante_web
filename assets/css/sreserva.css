@@ -532,8 +532,8 @@
     #TOPBAR
   \*-----------------------------------*/  
   .topbar { display: none; }
-  
-  
+
+
   /*-----------------------------------*\
     #HEADER
   \*-----------------------------------*/
@@ -728,7 +728,7 @@
     opacity: 1;
     pointer-events: all;
   }
-  
+
 
   /*-----------------------------------*\
     #HERO
@@ -782,115 +782,55 @@
     0% { transform: scale(1); }
     100% { transform: scale(1.15); }
   }
-  
 
   /*-----------------------------------*\
-    #CONTACT
+    #RESERVATION
   \*-----------------------------------*/
-  .shape-1 {
-    bottom: 0;
-    left: 0;
-  }
-
-  .shape-2 {
-    top: 0;
-    right: 0;
-  }
-
-  .columns {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin-block-start: 50px;
-  }
-
-  .column {
-    flex: 1;
-    padding: 30px 20px 40px;
-    border-right: 1px solid var(--gold-crayola);
-  }
-
-  .column:last-child { border-right: none; }
-
-  .column .card-icon {    
-    height: 140px;
-    max-width: max-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    margin-block-end: 20px;
-  }
-
-  .column .span:hover { color: var(--gold-crayola); }
-
-  .column .card-title  {
+  .headline-2 { 
+    margin-block-end: 10px;
     color: var(--gold-crayola);
-    font-weight: var(--weight-bold);
-    margin-block-end: 15px;
   }
 
-  .column .contact-link { transition: var(--transition-1); }
-  
-  .column .contact-link:is(:hover, :focus-visible) { color: var(--gold-crayola); }
-  
+  .form-text { margin-block-end: 40px; }
 
-  /*-----------------------------------*\
-    #QUESTIONS
-  \*-----------------------------------*/
-  .questions{ margin-top: 50px; }
-
-  .q-input { 
-    width: 70%; 
-    margin: auto; 
-    margin-block-end: 25px;
+  .form-desc { color: var(--gold-crayola); }
+  
+  .form-left { 
+    padding: 40px 20px 30px;
+    border: 1px solid var(--gold-crayola);
   }
-
-  .q-input:last-child { margin-block-end: 30px; }
-
+  
+  .input-field[type="date"] {
+    text-transform: uppercase;
+    padding-inline-end: 10px;
+  }
+  
+  .input-field[type="date"]::-webkit-calendar-picker-indicator { opacity: 0; }
+  
   textarea.input-field {
     resize: none;
     height: 140px;
     padding-block: 20px;
     line-height: var(--lineHeight-1);
   }
-
-  .form-questions .btn { margin: auto; }
-
-
-  /*-----------------------------------*\
-    #SOCIALS
-  \*-----------------------------------*/
-  .map {
-    margin-block: 25px;
-    border-radius: var(--radius-24);
-    filter: grayscale(70%) invert(100%);
+  
+  .form-left .btn {
+    max-width: 100%;
+    width: 100%;
   }
 
-  .network h3 { margin-block-start: 100px; }
-
-  .social-network {
-    margin: auto;
+  .form-p { 
+    font-size: var(--fontSize-label-3);
     margin-block-start: 30px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
   }
 
-  .social-network img{
-    cursor: pointer;
-    margin-inline-end: 15px; 
-  }
-
-  .social-network img:last-child { margin-inline-end: 0px; }
-
-  .network .shape-2 { 
-    top: -20px;
+  .shape-2 {
+    top: 0;
     left: 0;
   }
 
-  .network .shape-3 { 
-    bottom: 20px;
+  .shape-3 {
+    bottom: 0;
     right: 0;
   }
 
@@ -1026,34 +966,19 @@
     opacity: 1;
     visibility: visible;
   }
-  
-  
+
+
+
   /*-----------------------------------*\
     #MEDIA QUERIES
   \*-----------------------------------*/
-
-  @media (max-width: 850px) {
-    /* CONTACT */
-    .columns .column { flex-basis: 40%; }
-
-    .columns .column:nth-child(2) { border-right: none;}
-
-    .columns .column:last-child { flex-basis: 100%; }
-
-    /* QUESTIONS */
-    .q-input { width: 80%; }
-
-    /* SOCIAL */
-    .social-network img{ width: 40px; }
-  }
-
-
+  
   /**
    * responsive for less than 600px screen
   */
   @media only screen and (max-width: 600px) {
     .logo .container-logo img {
-      width: 60px; /* Nuevo tamaño del logotipo para dispositivos móviles */
+      width: 60px;
       height: 60px;
     }
 
@@ -1067,30 +992,12 @@
       margin-top: -10px;
       letter-spacing: 2.5px;
     }
-
-    /* CONTACT */
-    .columns .column:nth-child(2) { flex-basis: 100%; }
-
-    .columns .column:nth-child(1) { border-right: none;}
-
-    .columns .column:nth-child(2) { border-right: none;}
-
-    /* QUESTIONS */
-    .qp { margin-block-start: 15px; }
-
-    .q-input { 
-      width: 90%; 
-      margin-block-end: 10px;
-    }
-
-    .q-input:last-child { margin-block-end: 20px; }
   }
 
 
   /**
    * responsive for larger than 575px screen
   */
-  
   @media (min-width: 575px) {
     :root {
       /* typography */
@@ -1184,7 +1091,6 @@
   /**
    * responsive for larger than 768px screen
   */
-  
   @media (min-width: 768px) {
     /* REUSED STYLE */
     .grid-list { grid-template-columns: 1fr 1fr; }
@@ -1210,7 +1116,6 @@
   /**
    * responsive for larger than 992px screen
   */
-  
   @media (min-width: 992px) {
     :root {
       /* spacing */
@@ -1231,6 +1136,17 @@
     .logo .container-logo .logo-text p {
       letter-spacing: 6.5px;
     }
+
+    /* RESERVATION */
+    .form-left {
+      max-width: 800px;
+      width: 100%;
+    }
+
+    .reservation-form {
+      display: flex;
+      justify-content: center;
+    }
   
     /* FOOTER */
     .footer .grid-list {
@@ -1250,8 +1166,7 @@
   
   /**
    * responsive for larger than 1200px screen
-  */
-  
+  */  
   @media (min-width: 1200px) {
     :root {
       /* typography */
@@ -1327,8 +1242,7 @@
   
   /**
    * responsive for larger than 1400px screen
-  */
-  
+  */  
   @media (min-width: 1400px) {
   
     /* HEADER */
@@ -1336,5 +1250,5 @@
 
     .logo .container-logo .logo-text p {
       letter-spacing: 9.5px;
-    }
+    }    
   }

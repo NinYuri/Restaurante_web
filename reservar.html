@@ -9,20 +9,20 @@
     <meta name="title" content="CASA MIA">
     <meta name="description" content="Diseño web de restaurante por NinYuri">
     <link rel="icon" href="assets/images/Logo_icon.ico">
-    <link rel="stylesheet" href="assets/css/scontacto.css">
+    <link rel="stylesheet" href="assets/css/sreserva.css">
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&
-    display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
 
     <!-- IMAGES PRELOAD -->
-    <link rel="preload" as="image" href="assets/images/Car_9.jpeg">
-    <link rel="preload" as="image" href="assets/images/Car_13.jpeg">
+    <link rel="preload" as="image" href="assets/images/Car_14.jpeg">
+    <link rel="preload" as="image" href="assets/images/Car_15.jpeg">
+    <link rel="preload" as="image" href="assets/images/Car_16.jpeg">
 </head>
 
-<body id="top">
+<body>
 
     <!-- PRELOAD -->
     <div class="preload" data-preaload>
@@ -126,7 +126,7 @@
                     </li>
 
                     <li class="navbar-item">
-                        <a href="contacto.html" class="navbar-link hover-underline active">
+                        <a href="contacto.html" class="navbar-link hover-underline">
                         <div class="separator"></div>
                         <span class="span">Contacto</span>
                         </a>
@@ -155,7 +155,7 @@
 
             </nav>
 
-            <a href="#reservar" class="btn btn-secondary">
+            <a href="reservar.html" class="btn btn-secondary">
                 <span class="text text-1">Reservar Mesa</span>
                 <span class="text text-2" aria-hidden="true">Reservar Mesa</span>
             </a>
@@ -176,132 +176,119 @@
             <!-- HERO -->
             <section class="hero text-center" aria-label="prin" id="prin">
 
-                <ul class="hero-slider" data-hero-slider>
-                  <li class="slider-item active" data-hero-slider-item>
-                      <div class="slider-bg">
-                      <img src="assets/images/Car_9.jpeg" width="1880" height="900" alt="" class="img-cover">
-                      </div>
+                <ul class="hero-slider" data-hero-slider>  
+                    <li class="slider-item active" data-hero-slider-item>                        
+                        <div class="slider-bg">
+                        <img src="assets/images/Car_14.jpeg" width="1880" height="900" alt="" class="img-cover">
+                        </div>
+
+                        <h1 class="display-1 hero-title">Reserva</h1>
+                    </li>
+    
+                    <li class="slider-item" data-hero-slider-item>
+                        <div class="slider-bg">
+                        <img src="assets/images/Car_15.jpeg" width="1880" height="900" alt="" class="img-cover">
+                        </div>
         
-                      <h1 class="display-1 hero-title">Contacto</h1>
-                  </li>
-                    
-                  <li class="slider-item" data-hero-slider-item>
-                    <div class="slider-bg">
-                    <img src="assets/images/Car_13.jpeg" width="1880" height="900" alt="" class="img-cover">
-                    </div>
-      
-                    <h1 class="display-1 hero-title">Contacto</h1>
-                  </li> 
+                        <h1 class="display-1 hero-title">Reserva</h1>
+                    </li>
+  
+                    <li class="slider-item" data-hero-slider-item>
+                        <div class="slider-bg">
+                        <img src="assets/images/Car_16.jpeg" width="1880" height="900" alt="" class="img-cover">
+                        </div>
+        
+                        <h1 class="display-1 hero-title">Reserva</h1>
+                    </li>
                 </ul>
   
             </section>
 
-            <!-- CONTACT -->
-            <section class="section text-center">
-                
+            <!-- RESERVATION -->
+            <section class="section text-center">              
                 <div class="container">
-                    <img src="assets/images/Shape_1.png" width="246" height="412" loading="lazy" alt="shape"
-                    class="shape shape-1 move-anim">
-                    <img src="assets/images/Shape_2.png" width="343" height="345" loading="lazy" alt="shape"
-                    class="shape shape-2 move-anim">                                  
-                    <p class="section-subtitle label-2">Conéctate con Casa Mia</p>
 
-                    <section class="columns">
-                        <div class="column">
-                            <div class="card-icon">
-                                <img src="assets/images/Featicon_5.png" width="75" loading="lazy" alt="icon">
-                            </div>
+                  <img src="assets/images/Shape_5.png" width="721" height="1036" loading="lazy" alt="shape"
+                    class="shape shape-2 move-anim">
+                  <img src="./assets/images/Shape_6.png" width="383" height="385" loading="lazy" alt="shape"
+                    class="shape shape-3 move-anim">
 
-                            <h3 class="title-2 card-title">TELÉFONO</h3>
-                            <a href="tel:3531055090" class="body-4 contact-link">
-                                <span class="span">+52 353 105 5090</span>
-                            </a>
-                            <a href="tel:3531264938" class="body-4 contact-link">
-                                <span class="span">+52 353 126 4938</span>
-                            </a>
+                  <p class="headline-2 text-center">Para asegurar su reserva, le solicitamos amablemente un depósito de $100</p>
+                  <p class="form-text text-center">Este depósito servirá como confirmación y se deducirá de su cuenta final</p>
+  
+                  <div class="form reservation-form">
+  
+                    <form action="" class="form-left">    
+                    
+                      <p class="form-text text-center form-desc">
+                        Una vez que haya completado el formulario de reserva será redirigido automáticamente a nuestra ventana de pago seguro.
+                      </p>
+                      <div class="input-wrapper">
+                        <input type="text" name="name" placeholder="Nombre" autocomplete="off" class="input-field">
+                        <input type="tel" name="phone" placeholder="Número Telefónico" autocomplete="off" class="input-field">
+                      </div>
+  
+                      <div class="input-wrapper">
+                        
+                        <div class="icon-wrapper">
+                          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+  
+                          <select name="person" class="input-field">
+                            <option value="1-person">1 Persona</option>
+                            <option value="2-person">2 Personas</option>
+                            <option value="3-person">3 Personas</option>
+                            <option value="4-person">4 Personas</option>
+                            <option value="5-person">5 Personas</option>
+                            <option value="6-person">6 Personas</option>
+                            <option value="7-person">7 Personas</option>
+                          </select>
+  
+                          <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
                         </div>
-
-                        <div class="column">
-                            <div class="card-icon">
-                                <img src="assets/images/Featicon_6.png" width="85" loading="lazy" alt="icon">
-                            </div>
-
-                            <h3 class="title-2 card-title">DIRECCIÓN</h3>
-                            <p class="body-4">Avenida del Bosque 957,<br>Colonia Bosques de las Lomas,<br>Ciudad de México, México</p>
+  
+                        <div class="icon-wrapper">
+                          <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+                          <input type="date" name="reservation-date" class="input-field">
+                          <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
                         </div>
-
-                        <div class="column">
-                            <div class="card-icon">
-                                <img src="assets/images/Featicon_7.png" width="85" loading="lazy" alt="icon">
-                            </div>
-
-                            <h3 class="title-2 card-title">CORREO ELECTRÓNICO</h3>
-                            <a href="mailto:yurianamontserrath2003@gmail.com" class="body-4 contact-link">
-                              yurianamontserrath2003@gmail.com
-                            </a>                          
+  
+                        <div class="icon-wrapper">
+                          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+  
+                          <select name="person" class="input-field">
+                            <option value="08:00am">08:00 a.m.</option>
+                            <option value="09:00am">09:00 a.m.</option>
+                            <option value="10:00am">10:00 a.m.</option>
+                            <option value="11:00am">11:00 a.m.</option>
+                            <option value="12:00am">12:00 a.m.</option>
+                            <option value="01:00pm">01:00 p.m.</option>
+                            <option value="02:00pm">02:00 p.m.</option>
+                            <option value="03:00pm">03:00 p.m.</option>
+                            <option value="04:00pm">04:00 p.m.</option>
+                            <option value="05:00pm">05:00 p.m.</option>
+                            <option value="06:00pm">06:00 p.m.</option>
+                            <option value="07:00pm">07:00 p.m.</option>
+                            <option value="08:00pm">08:00 p.m.</option>
+                            <option value="09:00pm">09:00 p.m.</option>
+                            <option value="10:00pm">10:00 p.m.</option>
+                          </select>
+  
+                          <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
                         </div>
-                    </section>
+  
+                      </div>
+  
+                      <textarea name="Mensaje" placeholder="Mensaje" autocomplete="off" class="input-field"></textarea>
+  
+                      <button type="submit" class="btn btn-secondary">
+                        <span class="text text-1">Reservar Mesa</span>
+                        <span class="text text-2" aria-hidden="true">Reservar Mesa</span>
+                      </button>
+                    </form>
+                  </div>  
                 </div>
-                
-            </section>
 
-            <!-- QUESTIONS -->
-            <section class="section bg-black-10 text-center">
-              <p class="section-subtitle label-2">¿Preguntas?</p>
-              <h2 class="headline-1 section-title text-center">No dudes en enviarnos un mensaje.<br></h2>
-              <h3 class="card-title title-2 text-center qp">Estamos aquí para ayudarte en lo que necesites</h3>
-
-              <div class="container questions">
-                <div class="form questions-form bg-black-10">
-                  
-                  <form action="" class="form-questions">
-                    <div class="input-wrapper">
-                      <input type="text" name="name" placeholder="Nombre" autocomplete="off" class="q-input input-field">
-                    </div>
-
-                    <div class="input-wrapper">
-                      <input type="email" name="email_address" placeholder="Correo Electrónico" autocomplete="off" class="q-input input-field">
-                    </div>
-
-                    <div class="input-wrapper">
-                      <textarea name="Mensaje" placeholder="Mensaje" autocomplete="off" class="q-input input-field"></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-secondary">
-                      <span class="text text-1">Enviar Mensaje</span>
-                      <span class="text text-2" aria-hidden="true">Enviar Mensaje</span>
-                    </button>
-                  </form>
-
-                </div>
-              </div>
-            </section>
-
-            <!-- SOCIALS -->
-            <section class="section network text-center">
-              <p class="section-subtitle label-2">¿Dónde Encontrarnos?</p>
-
-              <div class="contact-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.4679242095604!2d-99.31315632472075!3d19.348881481912677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2076dfda73495%3A0xc5271fcba7e5ea40!2sAv.%20Camino%20al%20Bosque%2C%20Loma%20del%20Padre%2C%2005020%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1715481830063!5m2!1ses!2smx" 
-                  width="80%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map">
-                </iframe>
-              </div>
-
-              <h3 class="card-title title-2 text-center">
-                ¡Síguenos en nuestras redes sociales para estar al tanto de nuestras novedades y eventos especiales!
-              </h3>
-
-              <div class="social-network">
-                <img src="assets/images/S_Facebook.png" width="50" loading="lazy" alt="icon">
-                <img src="assets/images/S_Instagram.png" width="50" loading="lazy" alt="icon">
-                <img src="assets/images/S_Twitter.png" width="50" loading="lazy" alt="icon">
-              </div>
-
-              <img src="assets/images/Shape_5.png" width="921" height="1036" loading="lazy" alt="shape"
-                class="shape shape-2 move-anim">
-              <img src="./assets/images/Shape_6.png" width="383" height="385" loading="lazy" alt="shape"
-                class="shape shape-3 move-anim">
-
+                <p class="form-p">¡Gracias por elegirnos!</p>
             </section>
 
         </article>
@@ -415,7 +402,7 @@
         <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
     </a>
 
-    <script src="./assets/js/scontact.js"></script>
+    <script src="./assets/js/sreserva.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
